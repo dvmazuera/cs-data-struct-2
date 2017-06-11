@@ -1,0 +1,80 @@
+Question_file.txt
+
+1. What is recursion?
+Recursion is method of allowing a function to call itself to work through a problem in n steps until the desired anser is reached. You essentially break an algorithm down on step at a time, to its most inner case (base case if the case is defined when to end or degenrerate case if there is simply no other option but to end) - and at time work your way back up. I like to think of as tiers. 
+2. Why is it necessary to have a base case?
+A BASE CASE IS NECESSARY  to tell the function when to stop- just like a while loop will have a described place to break or return or else it will continue forever. Some recursive cases will have a clear end point and that is a degenerate base case, though not all do. 
+
+What is a graph?
+1.A graph is a structure to define a relationship.
+2.A graph is less restritive than a tree or linked list in that it doesnt require hierarchy, like a tree, and so can be directed (showing heirarchy) or un-directed (running both ways up and down the graph).
+3. A directed graph could be a food chain (or any tree graph), while an undirected graph can be a flight schedule for an airline, or friends on a social network. 
+
+
+
+
+PERFORMANCE: 
+
+Data Structure	Index	Search	Add-R	Add-L	Pop-L	Pop-R
+Python List     O(1)	O(n)	O(1)    O(n)    O(n)    O(1)   (o(n) cuz need to move all)
+Linked List     O(n)    O(n)    O(1)    O(1)    O(1)    O(n)   directed so get item before
+															   tail needs to go through all 
+Doub-LList      O(n)    O(n)    O(1)    O(1)    O(1)    O(1)   - un-directed!
+Queue-array       X	     X	 	O(1)     X	 	O(n)      X
+Queue-LList       X	     X	 	O(1)     X	 	O(1)      X
+Stack             X	     X	 	O(1)     X	 	  X     O(1)
+Deque- DLL        X	     X      O(1)    O(1)    O(1)    O(1)
+
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node 
+
+
+
+
+
+RUNTIME / MEMORY: 
+
+Data Structure	        Get	    Add	   Delete  Iterate	Memory    Sorted
+Dictionary (Hash Map)	O(1)	O(1)	O(1)	O(n)	medium    O(nlogn) get-n sort-logn
+Set (Hash Map)	 	 	O(1)	O(1)	O(1)	O(n)	medium    O(nlogn)  (SAME!)	 	 
+Binary Search Tree	  O(logn) O(logn)  O(logn)  O(n)    small     O(n) already sorted-just 							       ^needs to be balanced     			   need to loop.
+         
+Tree                    O(n)	O(1)	O(1)	O(n)	small     O(nlogn)
+                               ^as lomg as pointer on person already
+                                                ^finding person is O(n), traverse tree
+
+
+set = dict w/o values
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+
+
+SORTING: 
+
+Describe in words how the Bubble Sort algorithm works.
+- starts at the beginning of a list and compares two numbers to each other with lowest on left and higher on right, and traverses the list- Then stats again until complete. This way the biggest numbers bubble to the right (top).
+
+Describe in words how the Merge Sort algorithm works.
+-You can merge 2 already sorted lists in O(n) .. so to get already sorted lists you first, divide one big list into n lists with one number (sorted), and then merge the n lists together by merging in steps. Sorting a list = O(logn) * n(levels)
+
+Describe in words how the Quick Sort algorithm works.
+-You first establish what you assume to be the midnumber of the list - making it a partition or 'pivot' point. You then traverse the list and Move all lower numbers to the left and higher numbers to the right. Spliting a list = O(logn) * n(levels) - but often fastest way to sort
+
+
+
+
+
+
+
+
+
+
+
+
+
